@@ -9,6 +9,10 @@ Full code is available using mercurial see https://hg.reportlab.com/hg-public/rl
 The contributors lists are in no order and apologies to those accidentally not
 mentioned. If we missed you, please let us know!
 
+CHANGES  0.4.0	 15/08/2025
+---------------------------
+	* fixed clipping behaviour
+
 CHANGES  0.3.0	 02/06/2023
 ---------------------------
 	* possible pixBuf fixes for bigendian (untested)

@@ -120,9 +120,14 @@ reportlab/rl_config.py to accomplish this.
 5. Test suite
 =============
 Tests are in the ``reportlab/tests/`` directory.  They can be executed by cd'ing into the
-directory and executing ``python runAll.py`` with an envinment variable
+directory and executing ``python runAll.py`` with an environment variable
 set as RL_renderPMBackend=rlPyCairo. Obviously you need to have rlPyCairo
 installed.
+
+5.1 Building
+============
+python setup.py sdist to make a tar.gz package in folder dist.
+pip wheel -w dist . --no-deps to make a wheel in folder dist.
 
 6. Acknowledgements and Thanks
 ==============================

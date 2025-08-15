@@ -192,12 +192,11 @@ class GState(object):
         self.ctx.new_path()
 
     def clipPathClear(self):
-        self.ctx.rest_clip()
+        self.ctx.reset_clip()
 
     def clipPathSet(self):
         ctx = self.ctx
         oPath = ctx.copy_path()
-        ctx.new_path()
         ctx.clip()
         ctx.new_path()
         ctx.append_path(oPath)
